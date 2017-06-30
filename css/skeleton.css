@@ -34,10 +34,11 @@ body {
   font-family: "Raleway", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: #222;
   
+  background-color: #F2F3F4;
 }
 
 .content {
-   background-color: #F2F3F4;
+   
    padding-top: 5%;
    padding-bottom: 5%;
    height: 100%;
@@ -1200,7 +1201,7 @@ hr {
 * buttons section and style it there.
 *****/
 
-@media (min-width: 290px) and (max-width: 559px) {
+@media (min-width: 250px) and (max-width: 559px) {
   /* Larger than mobile */
     .menu-divider {
         margin-top: 10px;
@@ -1353,4 +1354,8 @@ html {
 
 .title {
   line-height: 0 !important;
+}
+
+.navbar-container {
+  background-color: white;
 }

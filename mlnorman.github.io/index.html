@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Skeleton Framework Test File</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+        <link rel="stylesheet" href="css/skeleton.css">
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/menu.css">
+        <link rel="icon" type="image/png" href="images/favicon.png">
+        
+    </head>
+    <body>
+        <!--<header>
+            <div class="container">
+                <div class="row">
+                <nav class="navbar">
+                    <a href="#" class="xs-twelve sm-five md-four lg-three columns menu-button menu-button-link"><h2 class="title"><strong>img chest</strong></h2></a>
+                    <a href="#" class="button xs-eleven xs-offset-by-four sm-three md-two md-offset-by-three lg-two lg-offset-by-four one-quarter columns menu-button">Login</a>
+                    <a href="#" class="button xs-eleven sm-three md-two lg-two one-quarter columns menu-button">Register</a>
+                </nav>
+                </div>
+                   
+             <hr class="menu-divider">
+            </div>
+        </header>-->
+        <!--SIDEBAR nav start-->
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="#">About</a>
+            <a href="#">Services</a>
+            <a href="#">Clients</a>
+            <a href="#">Contact</a>
+        </div>
+        <div class="navbar-container">
+            <div class="container">
+                <div class="row">
+                    <nav class="navbar">
+                        <a href="#" class="xs-nine sm-five md-four lg-three columns menu-button menu-button-link u-pull-left"><h3 class="title"><strong>AppName</strong></h3></a>
+                        <a href="#" class="button xs-eleven xs-offset-by-four sm-three md-two md-offset-by-three lg-two lg-offset-by-four one-quarter columns menu-button top-menu-hidden">Login</a>
+                        <a href="#" class="button xs-eleven sm-three md-two lg-two one-quarter columns menu-button top-menu-hidden">Register</a>
+                        <span class="u-pull-right xs-two side-menu-hidden" style="font-size:30px;cursor:pointer; margin-right: 20px;" onclick="openNav()">&#9776;</span>
+                    </nav>
+                </div>
+            </div>
+            <div class="nav-seperator u-full-width"></div>
+        </div>
+        <!--SIDEBAR nav finish-->
+        <!--CONTENT START-->
+        <div class="content">
+            <div class="container">
+                <div class="row">
+                    <div class="xs-twelve sm-twelve md-eight md-offset-by-two lg-eight lg-offset-by-two columns">
+                        <h4 class=""><strong>Welcome to Blank</strong></h4>
+                        <h6>Put some random text here if so people can see the mediocre layout.</h6>
+                    </div>
+                    <hr class="u-full-width">
+                </div>
+            </div>
+            <div class="container">
+                <div class="md-eight md-offset-by-two lg-eight lg-offset-by-two columns">
+                    <div class="row">
+                        <h6><strong>UPLOAD A FILE HERE!</strong></h6>
+                        <form>
+                            <div class="box">
+                                <div class="md-four md-offset-by-four lg-two lg-offset-by-four">
+                                    <input type="file" class="input-file" id="fileUpload"/>
+                                    <label for="fileUpload" id="fileButton"><strong>Choose your file...<strong></label><br>
+                                    <button class="button white-background">Upload</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <hr class="u-full-width">
+            </div>
+        </div>    
+        <!--CONTENT ENDS HERE-->
+        <!--STATIC FOOTER START-->
+            <div class='footer'>
+                <div class='container footer-container'>
+                   
+                        <div class='sm-twelve u-pull-right footer-text'>
+                            <p>&copy; 2017 - mlnorman </p>
+                        </div>
+                    
+                </div>
+            </div>
+        <!--STATIC FOOTER END-->
+        <script>
+            document.addEventListener("DOMContentLoaded", function(event) { 
+                var myInput = document.getElementById('fileUpload');
+                myInput.addEventListener('change', function() {
+                    var fullpath = document.getElementById('fileUpload').value;
+                    var filename = fullpath.replace(/.*[\/\\]/, '');
+                    document.getElementById('fileButton').innerText = filename;
+                });
+            });
+        </script>
+        <script src="js/side_menu.js"></script>
+    </body>
+</html>
